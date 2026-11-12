@@ -51,6 +51,23 @@ async function importMedia(strapi, value) {
 module.exports = {
   async bootstrap({ strapi }) {
     if (process.env.SEED_CONTENT !== "true") return;
+    const databasePath = path.resolve(
+      __dirname,
+      "..",
+      process.env.DATABASE_FILENAME || ".tmp/data.db"
+    );
+    const seedMarker = path.join(
+      path.dirname(databasePath),
+      ".assetar-content-seed-v1-complete"
+    );
+    try {
+      await fs.access(seedMarker);
+      strapi.log.info("Content migration already completed; skipping seed");
+      return;
+    } catch {
+      // No marker means this database has not completed its initial migration.
+    }
+
     // Existing drafts, unpublished documents, and team edits are never overwritten.
     for (const [key, model] of Object.entries(models)) {
       const uid = `api::${model}.${model}`;
@@ -63,5 +80,10 @@ module.exports = {
       await strapi.documents(uid).create({ data, status: "published" });
       strapi.log.info(`Migrated and published ${model}`);
     }
+    await fs.mkdir(path.dirname(seedMarker), { recursive: true });
+    const pendingMarker = `${seedMarker}.tmp`;
+    await fs.writeFile(pendingMarker, "completed\n", { flag: "w" });
+    await fs.rename(pendingMarker, seedMarker);
+    strapi.log.info("Initial content migration completed");
   },
 };

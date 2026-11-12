@@ -16,7 +16,7 @@ services:
       TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT:?Set TRANSFER_TOKEN_SALT}
       ENCRYPTION_KEY: ${ENCRYPTION_KEY:?Set ENCRYPTION_KEY}
       JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET}
-      SEED_CONTENT: ${SEED_CONTENT:-false}
+      SEED_CONTENT: ${SEED_CONTENT:-true}
     volumes:
       - cms_data:/app/data
       - cms_uploads:/app/public/uploads
