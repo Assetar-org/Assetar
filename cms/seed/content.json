@@ -1,0 +1,291 @@
+{
+  "site": {
+    "name": "Assetar",
+    "announcement": "Private, Personalized, Anonymous Digital Assets Trading",
+    "logo": {
+      "url": "/legacy/images/logo.png",
+      "alt": "Assetar"
+    },
+    "tradeLink": {
+      "label": "Get Started",
+      "href": "https://wa.link/assetartrade",
+      "newTab": true
+    },
+    "navigation": [
+      {
+        "label": "About Us",
+        "href": "/about",
+        "newTab": false
+      },
+      {
+        "label": "Testimonials",
+        "href": "/#testimonial",
+        "newTab": false
+      },
+      {
+        "label": "Contact us",
+        "href": "/#footer",
+        "newTab": false
+      }
+    ],
+    "socialLabel": "Socials",
+    "contactHeading": "Contact Us",
+    "socialHeading": "Social Links",
+    "contacts": [
+      {
+        "label": "+2348062404114",
+        "href": "tel:+2348062404114",
+        "newTab": false
+      },
+      {
+        "label": "assetar.co@gmail.com",
+        "href": "mailto:assetar.co@gmail.com",
+        "newTab": false
+      }
+    ],
+    "socialLinks": [
+      {
+        "label": "Youtube",
+        "href": "https://youtube.com/@assetar_co?si=p1AVedcAM-HS8IOt",
+        "newTab": true
+      },
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com/assetar.co?igshid=NTc4MTIwNjQ2YQ==",
+        "newTab": true
+      },
+      {
+        "label": "Tiktok",
+        "href": "https://www.tiktok.com/@assetar.co?_t=8bwxxyherd7&_r=1",
+        "newTab": true
+      },
+      {
+        "label": "X (Twitter)",
+        "href": "https://twitter.com/co_assetar?t=NW1lulxHUcHmUeUchXNx1A&s=09",
+        "newTab": true
+      }
+    ],
+    "copyright": "copyright © AssetarExchange 2022.",
+    "seo": {
+      "title": "Assetar Exchange: Secure Cryptocurrency Trading",
+      "description": "Assetar Exchange: Easy, Fast and secure cryptocurrency exchange platform. Trade your digital assets with confidence.",
+      "keywords": "cryptocurrency, exchange, secure, fast, easy, digital assets, trading",
+      "noIndex": false,
+      "headLinks": [],
+      "metaTags": []
+    },
+    "marketing": {
+      "googleTagId": "AW-16926540558",
+      "snapchatPixelId": "1e3307fd-52b0-425d-ae9c-d94cd11f8b13",
+      "mailchimpScriptUrl": "https://chimpstatic.com/mcjs-connected/js/users/92b3f86f5e15ec636a80d21bf/a30fb7af44cafa347190155a2.js",
+      "enabled": true
+    }
+  },
+  "home": {
+    "heroTitle": "Don’t be A Target: The Only Exchange Built For Total Silence",
+    "heroDescription": "Decentralized Trading is confusing, and one wrong click can cost you eveyrything.\nWe handle the technical complexity for you ensuring your trades are invisible-- so you can build quiet wealth with 100% peace of mind",
+    "heroImage": {
+      "url": "/legacy/images/hero-image.png",
+      "alt": "Assetar cryptocurrency exchange"
+    },
+    "primaryLink": {
+      "label": "Click To Trade",
+      "href": "https://wa.link/assetartrade",
+      "newTab": true
+    },
+    "secondaryLink": {
+      "label": "Free Crypto Privacy Consultation",
+      "href": "https://wa.link/assetarconsultation",
+      "newTab": true
+    },
+    "platformHeading": "We actively trade on these platforms",
+    "platforms": [
+      {
+        "url": "https://cdn.brandfetch.io/id8fwcm2BN/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
+        "alt": ""
+      },
+      {
+        "url": "/legacy/svgs/exodus-seeklogo.svg",
+        "alt": ""
+      },
+      {
+        "url": "/legacy/svgs/Trust_Wallet_Core_Logo_Blue.svg",
+        "alt": ""
+      },
+      {
+        "url": "https://cdn.brandfetch.io/domain/pancakeswap.finance/w/400/h/400?c=1idtG5U-VMK6lGmiLhC",
+        "alt": ""
+      },
+      {
+        "url": "https://cdn.brandfetch.io/id_HKIytUb/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
+        "alt": ""
+      },
+      {
+        "url": "https://cdn.brandfetch.io/domain/tronlink.org/w/400/h/400?c=1idtG5U-VMK6lGmiLhC",
+        "alt": ""
+      }
+    ],
+    "valuesHeading": "Our Values",
+    "valuesDescription": "We are the best option for these reasons count on us to deliver when you need speedy, secure transactions",
+    "values": [
+      {
+        "title": "Decentralization",
+        "description": "All transactions are routed through Decentralized channels to ensure complete privacy and protection",
+        "image": {
+          "url": "/legacy/images/svg/security.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Personalized",
+        "description": "We attend to each customer specially, catering to and Educating you on the best practice, depending on your trading goals",
+        "image": {
+          "url": "/legacy/images/svg/personalized.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Non - Custodial",
+        "description": "We do not hold your funds, you are in control of your assets at all times, we only facilitate the transaction",
+        "image": {
+          "url": "/legacy/images/svg/prices.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Confidential",
+        "description": "Every detail shared during the course of trading with is kept strictly between both parties.",
+        "image": {
+          "url": "/legacy/images/svg/safe.svg",
+          "alt": ""
+        }
+      }
+    ],
+    "servicesHeading": "How Assetar Works",
+    "servicesDescription": "Here's how we make it happen: We help facilitate the conversion of Crypto currency into real life currency through the use of Non - custodial, decentralized method and our extensive peer-to-peer Network Note: WE DO NOT HOLD USERS FUNDS OR HOLD FIAT.",
+    "services": [
+      {
+        "title": "Decentralization Education",
+        "description": "During our customer onboarding we find out our customers goals and recommend tools to meet their desired level of privacy .",
+        "image": {
+          "url": "/legacy/images/svg/cursor_icon.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Secure & Silent Processing",
+        "description": "Every swap, payment, transfer er is done using decentralized platforms that do not risk your privacy therefore removing any risk of exposure for your through your funds",
+        "image": {
+          "url": "/legacy/images/svg/cursor_icon.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Extensive Peer- to - Peer Network",
+        "description": "Payments in fiats are facilitated using our extensive peer to peer network which ensures that your information is kept unexposed.",
+        "image": {
+          "url": "/legacy/images/svg/cursor_icon.svg",
+          "alt": ""
+        }
+      },
+      {
+        "title": "Encrypted messaging Integration",
+        "description": "Communication between parties is done over end-to-end encrypted platforms like WhatsApp to ensure your conversations are hidden from prying eyes.",
+        "image": {
+          "url": "/legacy/images/svg/cursor_icon.svg",
+          "alt": ""
+        }
+      }
+    ],
+    "testimonialsHeading": "Our Customers Reviews",
+    "testimonialsDescription": "Join the thousands of people already on the exchange today. Hear from our clients",
+    "testimonials": [
+      {
+        "quote": "Assetar in the best I’ve been with, no cap, quick exchange and deals are always done the way it should be",
+        "author": "Anonymous"
+      },
+      {
+        "quote": "If the scale is on 100, Assetar broke the scale. I thought I had a good exchange service till I started trading with Assetar. They’re simply top notch, I recommend",
+        "author": "Rahman Pablo"
+      },
+      {
+        "quote": "I have been trading with Assetar for almost a year now and it’s been a really great experience so far. For me meeting up to time and delivery early is important and that’s what I’ve experienced with Assetar so far.",
+        "author": "Omoregie Osayande Alvan"
+      },
+      {
+        "quote": "The only place where I don’t ever feel worried about trading anything. I’d exchange my kidneys here if Assetar starts buying kidneys❤️",
+        "author": "Ohunma Azike"
+      },
+      {
+        "quote": "The team of Assetar is truly brilliant and well-versed in the crypto space. Furthermore their customer service is attentive, responsive and fast. I never had to wait over 5mins before receiving a reply.",
+        "author": "Osagie"
+      }
+    ],
+    "cta": {
+      "title": "Escape the Matrix",
+      "subtitle": "Get started",
+      "button": {
+        "label": "Get Started",
+        "href": "https://wa.link/assetartrade",
+        "newTab": true
+      },
+      "description": "Join the growing network of individuals who value privacy, automomy and a smarter way to transact."
+    },
+    "seo": {
+      "title": "Assetar Exchange: Secure Cryptocurrency Trading",
+      "description": "Assetar Exchange: Easy, Fast and secure cryptocurrency exchange platform. Trade your digital assets with confidence.",
+      "keywords": "cryptocurrency, exchange, secure, fast, easy, digital assets, trading",
+      "noIndex": false,
+      "headLinks": [],
+      "metaTags": []
+    }
+  },
+  "about": {
+    "eyebrow": "Assetar's One-of-a-kind Story",
+    "heroTitle": "Africa's Fastest and Easiest Cryptocurrency Exchange",
+    "primaryLink": {
+      "label": "Trade with Us",
+      "href": "https://wa.link/assetartrade",
+      "newTab": true
+    },
+    "faqEyebrow": "FAQs",
+    "faqHeading": "We are here to answer to all your concerns",
+    "faqDescription": "Here is a list of frequently asked questions (FAQs) concerning Assetar, including information you should be aware of regarding the crypto-economy. Please don't hesitate to enquire further through any of Assetar's numerous outreach methods.",
+    "faqs": [
+      {
+        "question": "How does Assetar Exchange work?",
+        "answer": "Buying and selling cryptocurrencies on Assetar enables you to convert your cryptocurrencies into Naira. Digital assets' prices, including those of coins and tokens, are set based on our hourly trading activities. It is significant to note that based on our buy and sell activities, our cryptocurrency prices differ from those offered by other cryptocurrency exchanges in the market (order)."
+      },
+      {
+        "question": "What is a crypto exchange vs wallet?",
+        "answer": "A wallet is used for holding your own coins, whereas an exchange like Assetar allows you to buy and sell coins at market value. This is the key distinction between a cryptocurrency exchange and a wallet."
+      },
+      {
+        "question": "What is the cheapest cryptocurrency?",
+        "answer": "Since the debut of the first cryptocurrency, the market for cryptocurrencies has expanded dramatically. Here are the top 10 most affordable cryptocurrencies with promising futures that our analysts have been monitoring: USD Coin, XRP, Cardano, Dogecoin, Shiba Inu, Tether, Dai, Algorand, Stellar, and Decentraland."
+      },
+      {
+        "question": "How long does a transaction with Assetar Exchange take?",
+        "answer": "All our transactions are usually completed under 5 minutes except in rare cases of bank failures or blockchain related delays"
+      }
+    ],
+    "cta": {
+      "title": "Let's Secure your Future with",
+      "subtitle": "Our Service",
+      "button": {
+        "label": "Get Started",
+        "href": "https://wa.link/assetartrade",
+        "newTab": true
+      },
+      "description": "Join thousands of other folks to have the best trading experience"
+    },
+    "seo": {
+      "title": "About Assetar | Assetar Exchange",
+      "description": "Assetar Exchange: Easy, Fast and secure cryptocurrency exchange platform. Trade your digital assets with confidence.",
+      "keywords": "cryptocurrency, exchange, secure, fast, easy, digital assets, trading",
+      "noIndex": false,
+      "headLinks": [],
+      "metaTags": []
+    }
+  }
+}

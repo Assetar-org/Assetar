@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_ctas",
+  "info": {
+    "displayName": "Cta"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

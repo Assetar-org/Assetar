@@ -1,0 +1,11 @@
+.git
+node_modules
+.nuxt
+.output
+.env
+.env.*
+dist
+*.zip
+cms
+docs
+tests

@@ -1,0 +1,95 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "platformHeading": {
+      "type": "string"
+    },
+    "valuesHeading": {
+      "type": "string"
+    },
+    "servicesHeading": {
+      "type": "string"
+    },
+    "testimonialsHeading": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "valuesDescription": {
+      "type": "text"
+    },
+    "servicesDescription": {
+      "type": "text"
+    },
+    "testimonialsDescription": {
+      "type": "text"
+    },
+    "heroImage": {
+      "type": "component",
+      "component": "shared.image",
+      "repeatable": false,
+      "required": false
+    },
+    "primaryLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": true
+    },
+    "secondaryLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": false
+    },
+    "platforms": {
+      "type": "component",
+      "component": "shared.image",
+      "repeatable": true,
+      "required": false
+    },
+    "values": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true,
+      "required": false
+    },
+    "services": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true,
+      "required": false
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "shared.testimonial",
+      "repeatable": true,
+      "required": false
+    },
+    "cta": {
+      "type": "component",
+      "component": "shared.cta",
+      "repeatable": false,
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false,
+      "required": false
+    }
+  }
+}

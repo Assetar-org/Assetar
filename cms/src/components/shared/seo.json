@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "Seo"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "canonicalUrl": {
+      "type": "string"
+    },
+    "noIndex": {
+      "type": "boolean",
+      "default": false
+    },
+    "shareImage": {
+      "type": "component",
+      "component": "shared.image",
+      "repeatable": false,
+      "required": false
+    },
+    "headLinks": {
+      "type": "component",
+      "component": "shared.head-link",
+      "repeatable": true,
+      "required": false
+    },
+    "metaTags": {
+      "type": "component",
+      "component": "shared.meta-tag",
+      "repeatable": true,
+      "required": false
+    }
+  }
+}

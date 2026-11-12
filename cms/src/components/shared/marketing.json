@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_marketings",
+  "info": {
+    "displayName": "Marketing"
+  },
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "googleTagId": {
+      "type": "string"
+    },
+    "snapchatPixelId": {
+      "type": "string"
+    },
+    "mailchimpScriptUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# Local production-mode smoke test. Never use this override for public hosting.
+services:
+  cms:
+    ports: ["127.0.0.1:1337:1337"]
+  web:
+    ports: ["127.0.0.1:3000:3000"]

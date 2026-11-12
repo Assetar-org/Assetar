@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_meta_tags",
+  "info": {
+    "displayName": "Meta Tag"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

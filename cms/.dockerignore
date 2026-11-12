@@ -1,0 +1,15 @@
+node_modules
+.env
+.env.*
+.cache
+.tmp
+.strapi
+build
+dist
+public/uploads/*
+!public/uploads/.gitkeep
+
+data
+*.db
+*.db-shm
+*.db-wal

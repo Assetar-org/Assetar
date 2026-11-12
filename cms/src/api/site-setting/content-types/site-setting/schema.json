@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Setting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "announcement": {
+      "type": "string"
+    },
+    "socialLabel": {
+      "type": "string"
+    },
+    "contactHeading": {
+      "type": "string"
+    },
+    "socialHeading": {
+      "type": "string"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "component",
+      "component": "shared.image",
+      "repeatable": false,
+      "required": false
+    },
+    "tradeLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": true
+    },
+    "navigation": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true,
+      "required": false
+    },
+    "contacts": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true,
+      "required": false
+    },
+    "socialLinks": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true,
+      "required": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false,
+      "required": false
+    },
+    "marketing": {
+      "type": "component",
+      "component": "shared.marketing",
+      "repeatable": false,
+      "required": false
+    }
+  }
+}

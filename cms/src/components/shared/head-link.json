@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_head_links",
+  "info": {
+    "displayName": "Head Link"
+  },
+  "attributes": {
+    "rel": {
+      "type": "enumeration",
+      "enum": [
+        "canonical",
+        "alternate",
+        "preconnect",
+        "dns-prefetch",
+        "preload",
+        "icon",
+        "apple-touch-icon"
+      ]
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "hreflang": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "as": {
+      "type": "string"
+    },
+    "crossOrigin": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
