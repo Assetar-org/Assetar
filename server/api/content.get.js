@@ -15,6 +15,11 @@ export default defineEventHandler(async (event) => {
     !config.strapiToken ||
     !config.public.strapiMediaUrl
   ) {
+    console.error("[content] CMS configuration is incomplete", {
+      strapiUrlConfigured: Boolean(config.strapiUrl),
+      strapiTokenConfigured: Boolean(config.strapiToken),
+      strapiMediaUrlConfigured: Boolean(config.public.strapiMediaUrl),
+    });
     throw createError({
       statusCode: 503,
       statusMessage: "CMS configuration is incomplete",
@@ -38,9 +43,13 @@ export default defineEventHandler(async (event) => {
       })
     );
     return assertContent(Object.fromEntries(pairs));
-  } catch {
+  } catch (error) {
     // Never log API credentials or return internal CMS error details to the browser.
-    console.error("[content] Unable to load required published CMS content");
+    console.error("[content] Unable to load required published CMS content", {
+      statusCode: error?.statusCode || error?.status || error?.response?.status,
+      code: error?.code || error?.cause?.code,
+      statusMessage: error?.statusMessage || error?.response?.statusText,
+    });
     throw createError({
       statusCode: 503,
       statusMessage: "Content is temporarily unavailable",
