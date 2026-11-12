@@ -1,6 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, existsSync } from "node:fs";
+import {
+  readFileSync,
+  existsSync,
+  mkdtempSync,
+  rmSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { createRequire } from "node:module";
 import { buildPageHead, buildMarketingHead, safeUrl } from "../shared/head.mjs";
 import { contentQuery, publicMedia, assertContent } from "../shared/cms.mjs";
@@ -178,7 +185,11 @@ test("CMS requests published documents and deeply populated media", () => {
 
 test("migration is opt-in, restart-safe, and preserves existing unpublished edits", async () => {
   const { bootstrap } = require("../cms/src/index.js");
-  const original = process.env.SEED_CONTENT;
+  const originalSeed = process.env.SEED_CONTENT;
+  const originalDatabase = process.env.DATABASE_FILENAME;
+  const temporaryDatabaseDirectory = mkdtempSync(
+    join(tmpdir(), "assetar-seed-test-")
+  );
   let writes = 0,
     uploads = 0;
   const existing = new Set();
@@ -208,6 +219,10 @@ test("migration is opt-in, restart-safe, and preserves existing unpublished edit
     log: { info() {} },
   };
   try {
+    process.env.DATABASE_FILENAME = join(
+      temporaryDatabaseDirectory,
+      "data.db"
+    );
     process.env.SEED_CONTENT = "false";
     await bootstrap({ strapi });
     assert.equal(writes, 0);
@@ -219,8 +234,11 @@ test("migration is opt-in, restart-safe, and preserves existing unpublished edit
     assert.equal(writes, 2);
     assert.equal(uploads, 0);
   } finally {
-    if (original === undefined) delete process.env.SEED_CONTENT;
-    else process.env.SEED_CONTENT = original;
+    if (originalSeed === undefined) delete process.env.SEED_CONTENT;
+    else process.env.SEED_CONTENT = originalSeed;
+    if (originalDatabase === undefined) delete process.env.DATABASE_FILENAME;
+    else process.env.DATABASE_FILENAME = originalDatabase;
+    rmSync(temporaryDatabaseDirectory, { recursive: true, force: true });
   }
 });
 
@@ -268,7 +286,11 @@ test("cleared page SEO fields inherit site defaults and explicit page canonical 
 
 test("first migration imports every distinct local image only once", async () => {
   const { bootstrap } = require("../cms/src/index.js");
-  const previous = process.env.SEED_CONTENT;
+  const previousSeed = process.env.SEED_CONTENT;
+  const previousDatabase = process.env.DATABASE_FILENAME;
+  const temporaryDatabaseDirectory = mkdtempSync(
+    join(tmpdir(), "assetar-seed-test-")
+  );
   const media = new Map();
   const documents = [];
   const strapi = {
@@ -296,6 +318,10 @@ test("first migration imports every distinct local image only once", async () =>
   };
   try {
     process.env.SEED_CONTENT = "true";
+    process.env.DATABASE_FILENAME = join(
+      temporaryDatabaseDirectory,
+      "data.db"
+    );
     await bootstrap({ strapi });
     assert.equal(documents.length, 3);
     assert.equal(media.size, 9);
@@ -305,7 +331,10 @@ test("first migration imports every distinct local image only once", async () =>
       1
     );
   } finally {
-    if (previous === undefined) delete process.env.SEED_CONTENT;
-    else process.env.SEED_CONTENT = previous;
+    if (previousSeed === undefined) delete process.env.SEED_CONTENT;
+    else process.env.SEED_CONTENT = previousSeed;
+    if (previousDatabase === undefined) delete process.env.DATABASE_FILENAME;
+    else process.env.DATABASE_FILENAME = previousDatabase;
+    rmSync(temporaryDatabaseDirectory, { recursive: true, force: true });
   }
 });
